@@ -1,0 +1,267 @@
+#mid-section .mid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 25px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+/* MID-SECTION IMAGES */
+
+#mid-section .mid-container .graphics-container .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun-Library/default/dw9a3a974f/2020/floorsets/01/30/mens2.jpg?sw=1320');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#mid-section .mid-container .puma-container .image{
+    background: url('https://images.pexels.com/photos/2759785/pexels-photo-2759785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#mid-section .mid-container .jordan-container .image{
+    background: url('https://images.pexels.com/photos/2065695/pexels-photo-2065695.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+/* MID SECTION TEXT */
+
+#mid-section .mid-container .puma-container .text{
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#mid-section .mid-container .graphics-container .text{
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+#mid-section .mid-container .jordan-container .text{
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+/* MID SECTION SHOP LINKS */
+
+#mid-section .mid-container .graphics-container .shop-link{
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#mid-section .mid-container .puma-container .shop-link{
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+#mid-section .mid-container .jordan-container .shop-link{
+    color: black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* MID SECTION A LINKS */
+
+#mid-section .mid-container .graphics-container .shop-link a{
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#mid-section .mid-container .puma-container .shop-link a{
+    text-decoration: underline;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+
+#mid-section .mid-container .jordan-container .shop-link a{
+   text-decoration: underline;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* BOTTOM CONTAINERS */
+
+#mid-section .bottom-container{
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 25%;
+    
+    
+}
+
+#mid-section .bottom-container{
+    display: grid;
+    width: 84%;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding-top: 15%;
+    grid-gap: 20px;
+    
+
+}
+
+#mid-section .womensale-container{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+
+#mid-section .mensale-container{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+
+/* BOTTOM IMAGES */
+
+#mid-section .womensale-container .image1{
+    background: url('https://images.pexels.com/photos/1771383/pexels-photo-1771383.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+
+    
+}
+
+
+#mid-section .mensale-container .image4{
+    background: url('https://images.pexels.com/photos/2897531/pexels-photo-2897531.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+    margin: 0 auto;
+    -webkit-filter: brightness(70%);
+    -moz-filter: brightness(70%);
+    -o-filter: brightness(70%);
+    -ms-filter: brightness(70%);
+    
+}
+
+
+/* BOTTOM TEXT IMAGES */ 
+
+#mid-section .womensale-container .women-text{
+    position: absolute;
+    top: 0%;
+    right: 50%;
+    transform: translate(50%, 100%);
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+#mid-section .mensale-container .men-text{
+    position: absolute;
+    top: 7%;
+    right: 50%;
+    transform: translate(50%, 100%);
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+
+
+
+/* SHOP BUTTON */
+
+#mid-section .womensale-container .shop-button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 100%);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 900;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10%;
+    transition: all .4s ease-in-out;
+}
+
+
+#mid-section .mensale-container .shop-button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, 100%);
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    z-index: 900;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10%;
+    transition: all .4s ease-in-out;
+}
+
+
+
+
+/* SHOP BUTTON LINKS */ 
+
+#mid-section .womensale-container .shop-button a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
+#mid-section .mensale-container .shop-button a{
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,1002 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+
+/* Mobile Nav */
+
+.mobile-nav {
+    text-align: center;
+    background-color:white;
+    height: 48vh;
+    width: 30vh;
+    -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 78px -15px
+    rgba(0,0,0,0.75);
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+    transform: translateY(100%, 0%, 0%);
+    
+}
+
+
+.mobile-nav.active{
+    transform: translateY(0%, 0%, 0%);
+    display: none;
+    
+    
+}
+
+
+.mobile-nav h3 {
+    letter-spacing: 1px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+/* TOP-SECTION */
+
+#top-section .banner-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#top-section .banner-container .image{
+    background: url('https://images.pexels.com/photos/1036396/pexels-photo-1036396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 500px;
+    width: 1000px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 5%;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+
+#top-section .banner-container .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#top-section .banner-container .bottom-right a{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+#top-section .banner-container .bottom-right a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navbar{
+    padding-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar-container .logo a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.navbar-container .logo a h1{
+    text-align: center;
+    padding-top: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.navbar a p{
+    padding: 15px 45px;
+}
+
+
+/* DROPDOWN CONTENT */
+
+.womens-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.mens-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.lifestyle-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+
+.sale-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+
+.home-dropdown{
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    left: -25%;
+}
+
+.womens-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mens-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.lifestyle-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sale-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.home-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* DROP-DOWN CONTENT H3 */
+
+.womens-dropdown .womens-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mens-dropdown .mens-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.lifestyle-dropdown .lifestyle-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.sale-dropdown .sale-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home-dropdown .home-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* SEARCH-BAR */
+
+.search-container button{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25%;
+    margin-left: 5px;
+    padding: 5px 10px;
+    position: relative;
+    left: 40%;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    margin-left: 25px;
+    position: relative;
+    left: 40%;
+}
+
+/* SHOPPING CART */
+
+.navbar .shopping-cart{
+    margin-right: 100px;
+}
+
+.navbar .shopping-cart a ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .shopping-cart {
+    position: relative;
+    left: 11%;
+    padding-top: 10px;
+}
+
+/* MENU */
+
+.navbar-container .menu-button ion-icon{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 40px;
+    padding: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#jordan-sale-section h1{ 
+    cursor: pointer;
+    text-align: center;
+    padding-top: 65px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+#jordan-sale-section .jordan-sale-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-top: 15%;
+    grid-gap: 50px;
+}
+
+/* PRODUCT SECTION */
+
+#jordan-sale-section .jordan-sale-container .product1 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/414571_061_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+#jordan-sale-section .jordan-sale-container .product2 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CT8019_024_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product3 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/554724_066_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product4 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CW6993_100_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product5 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CU1110_010_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product6 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CK5692_600_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product7 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CT5350_401_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product8 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/852542_146_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#jordan-sale-section .jordan-sale-container .product9 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/CI4072_001_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#jordan-sale-section .jordan-sale-container .product10 .image{
+    background: url('https://images.finishline.com/is/image/FinishLine/852542_011_P1?$default$&wid=671&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+/* PRODUCT SECTION HOVER*/
+
+#jordan-sale-section .jordan-sale-container .product1 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/414571_061_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+#jordan-sale-section .jordan-sale-container .product2 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CT8019_024_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product3 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/554724_066_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product4 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CW6993_100_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product5 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CU1110_010_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product6 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CK5692_600_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product7 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CT5350_401_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product8 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/852542_146_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#jordan-sale-section .jordan-sale-container .product9 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/CI4072_001_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#jordan-sale-section .jordan-sale-container .product10 .image:hover{
+    background: url('https://images.finishline.com/is/image/FinishLine/852542_011_P2?$default$&wid=325&bgc=eeeeee');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+/* ADD TO CART */
+
+#jordan-sale-section .jordan-sale-container .product1 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product2 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product3 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product4 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product5 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product6 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product7 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product8 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#jordan-sale-section .jordan-sale-container .product9 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+#jordan-sale-section .jordan-sale-container .product10 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* FOOTER */
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#footer-section{
+    margin-top: 25%;
+    width: 100%;
+    background-color: #c5b9b994;
+
+}
+
+#footer-section .footer-container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    background-color: #c5b9b994;
+
+}
+
+#footer-section .footer-container ion-icon{
+    color: black;
+    font-size: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+#footer-section .footer-container ion-icon:hover{
+    opacity: .5;
+}
+
+#footer-section h5{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer-section .footer-container a{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#footer-section .footer-container a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 815px){
+    .navbar{
+        display: none;
+    }
+
+        /* MENU BUTTON */
+
+        .navbar-container .menu-button ion-icon{
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 50px;
+            font-size: 40px;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+        }
+
+    #top-section .banner-container .image{
+        height: 300px;
+        width: 700px;
+    }
+
+    #jordan-sale-section .jordan-sale-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding-top: 15%;
+        grid-gap: 50px;
+    }
+
+
+    /* FOOTER-SECTION */
+
+    #footer-section .footer-container{
+        margin: 0 auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        display: grid;
+        margin-top: 70%;
+    }
+
+    #footer-section .footer-container .help-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .links-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .extras-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .findstore-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .socialmedia-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .socialmedia-container ion-icon{
+        color: black;
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    #footer-section h5 {
+        text-align: center;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+
+    #footer-section .footer-container .help-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+
+    #footer-section .footer-container .links-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .extras-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .findstore-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .findstore-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .socialmedia-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+@media only screen and (max-width: 470px){
+    .navbar{
+        display: none;
+    }
+
+    #top-section .banner-container .image{
+        height: 300px;
+        width: 700px;
+    }
+
+        /* MENU BUTTON */
+
+        .navbar-container .menu-button ion-icon{
+            margin: 0 auto;
+            width: 100%;
+            margin-top: 50px;
+            font-size: 40px;
+            padding: 5px;
+            cursor: pointer;
+            display: flex;
+        }
+
+        #jordan-sale-section .jordan-sale-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: center;
+            padding-top: 15%;
+            grid-gap: 50px;
+        }
+
+
+    /* FOOTER-SECTION */
+
+    #footer-section .footer-container{
+        margin: 0 auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        display: grid;
+        margin-top: 70%;
+    }
+
+    #footer-section .footer-container .help-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .links-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .extras-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .findstore-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .socialmedia-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .socialmedia-container ion-icon{
+        color: black;
+        font-size: 17px;
+    }
+
+    #footer-section .footer-container .help-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+
+    #footer-section .footer-container .links-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .extras-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .findstore-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .findstore-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .socialmedia-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}

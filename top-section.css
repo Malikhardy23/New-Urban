@@ -1,0 +1,61 @@
+/* TOP-SECTION */
+
+#top-section .banner-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#top-section .banner-container .image{
+    background: url('https://images.pexels.com/photos/1036396/pexels-photo-1036396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 500px;
+    width: 1000px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 5%;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+
+#top-section .banner-container .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#top-section .banner-container .bottom-right a{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+#top-section .banner-container .bottom-right a:hover{
+    background-color: black;
+    color: white;
+}

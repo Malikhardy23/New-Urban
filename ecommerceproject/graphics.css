@@ -1,0 +1,1008 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+/* Mobile Nav */
+
+.mobile-nav {
+    text-align: center;
+    background-color:white;
+    height: 48vh;
+    width: 30vh;
+    -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+    box-shadow: 2px 0px 78px -15px
+    rgba(0,0,0,0.75);
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+    transform: translateY(100%, 0%, 0%);
+    
+}
+
+
+.mobile-nav.active{
+    transform: translateY(0%, 0%, 0%);
+    display: none;
+    
+    
+}
+
+.mobile-nav h3 {
+    letter-spacing: 1px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav ul a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+/* TOP-SECTION */
+
+#top-section .banner-container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#top-section .banner-container .image{
+    background: url('https://images.pexels.com/photos/1036396/pexels-photo-1036396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 500px;
+    width: 1000px;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 5%;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+
+#top-section .banner-container .centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#top-section .banner-container .bottom-right a{
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    border: 2px solid white;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    margin-top: 2px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10%;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+#top-section .banner-container .bottom-right a:hover{
+    background-color: black;
+    color: white;
+}
+hr{
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navbar{
+    padding-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navbar-container .logo a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.navbar-container .logo a h1{
+    text-align: center;
+    padding-top: 5%;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.navbar a p{
+    padding: 15px 45px;
+}
+
+
+/* DROPDOWN CONTENT */
+
+.womens-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.mens-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.lifestyle-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+
+.sale-dropdown {
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+
+.home-dropdown{
+    position: relative;
+    display: flex;
+    padding: 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    left: -25%;
+}
+
+.womens-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mens-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.lifestyle-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sale-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+.home-dropdown:hover .dropdown-content {
+    display: flex;
+    margin-top: 10px;
+}
+
+/* DROP-DOWN CONTENT H3 */
+
+.womens-dropdown .womens-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mens-dropdown .mens-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.lifestyle-dropdown .lifestyle-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.sale-dropdown .sale-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.home-dropdown .home-title{
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* SEARCH-BAR */
+
+.search-container button{
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 25%;
+    margin-left: 5px;
+    padding: 5px 10px;
+    position: relative;
+    left: 40%;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    margin-left: 25px;
+    position: relative;
+    left: 40%;
+}
+
+/* SHOPPING CART */
+
+.navbar .shopping-cart{
+    margin-right: 100px;
+}
+
+.navbar .shopping-cart a ion-icon{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar .shopping-cart {
+    position: relative;
+    left: 11%;
+    padding-top: 10px;
+}
+
+/* MENU BUTTON */
+
+.navbar-container .menu-button ion-icon{
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+    
+}
+
+/* USER-LOGIN */
+
+.navbar .user-login{
+    margin-left: 12%;
+    margin-top: 15px;
+}
+
+
+.navbar .user-login a ion-icon{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#graphics-section h1{ 
+    cursor: pointer;
+}
+
+#graphics-section .graphics-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 15%;
+    grid-gap: 50px;
+}
+
+/* ADD TO CART SECTION */
+
+#graphics-section .graphics-container .product1 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product2 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product3 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product4 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product5 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product6 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product7 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product8 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product9 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product10 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product11 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#graphics-section .graphics-container .product12 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* PRODUCT SECTION */
+
+#graphics-section .graphics-container .product1 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwa9d552b0/product_images/0097502750622NEW_00_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+
+#graphics-section .graphics-container .product2 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw920254d8/product_images/0702502750183NEW_00_998.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product3 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw3c406faa/product_images/0702454500815NEW_00_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#graphics-section .graphics-container .product4 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw13056fdb/product_images/0097441530145NEW_00_075.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#graphics-section .graphics-container .product5 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw10b84b59/product_images/0097509390044NEW_00_619.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product6 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw64cd06d7/product_images/0097514360060NEW_00_041.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+
+#graphics-section .graphics-container .product7 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw0f686708/product_images/0702037910321NEW_00_035.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product8 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw531176f0/product_images/0702454500772NEW_00_041.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 25px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product9 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw195ed789/product_images/0098448870240NEW_00_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product10 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw87e9fb34/product_images/0098448870245NEW_00_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product11 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwae9cde48/product_images/0097499380037NEW_00_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section .graphics-container .product12 .image{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwe7659fd2/product_images/0097201220056NEW_00_001.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+
+#graphics-section h1{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 65px;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    padding-bottom: 25px;
+    letter-spacing: 3px;
+    width: 25%;
+    margin: 0 auto;
+}
+
+
+/* MENS IMAGE HOVER */
+
+
+#graphics-section .graphics-container .product1 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwfb641475/product_images/0097502750622NEW_01_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+
+}
+
+#graphics-section .graphics-container .product2 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw2938cbbb/product_images/0702502750183NEW_01_998.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product3 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dwce6f495f/product_images/0702454500815NEW_04_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product4 .image:hover{
+    background: url("https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw9ad093f9/product_images/0097441530145NEW_01_075.jpg?sw=690&sh=1070&sm=fit");
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product5 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw404008a4/product_images/0097509390044NEW_01_619.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product6 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw0666ff0a/product_images/0097514360060NEW_01_041.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+#graphics-section .graphics-container .product7 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dweb197eba/product_images/0702037910321NEW_01_035.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product8 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw29e8881e/product_images/0702454500772NEW_04_041.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product9 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw35ddef0d/product_images/0098448870240NEW_01_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+
+#graphics-section .graphics-container .product10 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw5cf33219/product_images/0098448870245NEW_01_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+}
+
+
+#graphics-section .graphics-container .product11 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw93d72b2e/product_images/0097499380037NEW_01_010.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+
+#graphics-section .graphics-container .product12 .image:hover{
+    background: url('https://www.pacsun.com/dw/image/v2/AAJE_PRD/on/demandware.static/-/Sites-pacsun_storefront_catalog/default/dw766860db/product_images/0097201220056NEW_01_001.jpg?sw=690&sh=1070&sm=fit');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+/* FOOTER */
+
+.container{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#footer-section{
+    margin-top: 25%;
+    width: 100%;
+    background-color: #c5b9b994;
+
+}
+
+#footer-section .footer-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    width: 100%;
+    background-color:  #c5b9b994;
+}
+
+#footer-section h5{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#footer-section .footer-container a{
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    color: black;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+#footer-section .footer-container a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 815px){
+    .navbar{
+        display: none;
+    }
+
+    .mobile-nav {
+        text-align: center;
+        background-color:white;
+        height: 42vh;
+        width: 30vh;
+        -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        box-shadow: 2px 0px 78px -15px
+        rgba(0,0,0,0.75);
+        margin: 0 auto;
+        transition: all .5s ease-in-out;
+        transform: translateY(100%, 0%, 0%);
+        
+    }
+    
+    
+    .mobile-nav.active{
+        transform: translateY(0%, 0%, 0%);
+        display: none;   
+        
+    }
+
+    .navbar-container .menu-button ion-icon{
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 50px;
+        font-size: 40px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+
+    #top-section .banner-container .image{
+        height: 300px;
+        width: 700px;
+    }
+
+    /* CONTENT-SECTION */
+
+    #graphics-section .graphics-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    /* FOOTER-SECTION */
+
+    #footer-section .footer-container{
+        margin: 0 auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        display: grid;
+        margin-top: 30%;
+    }
+
+    #footer-section .footer-container .help-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .links-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .extras-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .findstore-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .socialmedia-container ion-icon{
+        color: black;
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 470px){
+    .navbar{
+        display: none;
+    }
+
+    .mobile-nav {
+        text-align: center;
+        background-color:white;
+        height: 67vh;
+        width: 30vh;
+        -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
+        box-shadow: 2px 0px 78px -15px
+        rgba(0,0,0,0.75);
+        margin: 0 auto;
+        transition: all .5s ease-in-out;
+        transform: translateY(100%, 0%, 0%);
+        
+    }
+    
+    
+    .mobile-nav.active{
+        transform: translateY(0%, 0%, 0%);
+        display: none;
+        
+        
+    }
+    
+    .navbar-container .menu-button ion-icon{
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 50px;
+        font-size: 40px;
+        cursor: pointer;
+        display: flex;
+        
+    }
+
+    #top-section .banner-container .image{
+        height: 300px;
+        width: 700px;
+    }
+
+    #graphics-section .graphics-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 15%;
+        grid-gap: 50px;
+    }
+
+
+    /* FOOTER-SECTION */
+
+    #footer-section .footer-container{
+        margin: 0 auto;
+        text-align: center;
+        grid-template-columns: 1fr;
+        display: grid;
+        margin-top: 70%;
+    }
+
+    #footer-section .footer-container .help-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .help-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .links-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .links-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .extras-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+    }
+
+    #footer-section .footer-container .extras-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .findstore-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+
+    #footer-section .footer-container .socialmedia-container{
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    #footer-section .footer-container .findstore-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section .footer-container .socialmedia-container ion-icon{
+        color: black;
+        font-size: 20px;
+    }
+
+    #footer-section .footer-container .socialmedia-container h5{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    #footer-section h5 {
+        text-align: center;
+        padding-bottom: 5px;
+        width: 20%;
+        margin: 0 auto;
+    }
+}
